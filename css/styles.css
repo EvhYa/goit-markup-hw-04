@@ -1,0 +1,449 @@
+:root {
+   --primary-brand: #4d5ae5; /*--IRIS--*/
+   --pressed-state: #404bbf; /*--OCEAN--*/
+   --dark: #2e2f42; /*--NAVYBLUE--*/
+   --success: ##31d0aa; /*--GREEN--*/
+   --text: #434455; /*--SLATE--*/
+   --subtle-text: #8e8f99; /*--LIGHT SLATE--*/
+   --accent: #e7e9fc; /*--CORNFLOWWER--*/
+   --light: #f4f4fd; /*--CLOUD--*/
+   --model-overlay: #2e2f42; /*--NAVY BLUE MODAL--*/
+   --hero-background: #2e2f42; /*--GREY--*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   display: block;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   color: var(--text);
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/*=====================================CONTAINER=========================================*/
+.container {
+   width: 1158px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+.logo {
+   font-family: "Raleway", sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--primary-brand);
+   /*margin-right: 76px;*/
+}
+
+.logo-studio {
+   color: var(--dark);
+}
+
+.section-title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   text-align: center;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   color: var(--dark);
+   margin-bottom: 72px;
+}
+
+.btn {
+   cursor: pointer;
+   display: block;
+}
+
+.btn:hover,
+.btn:focus {
+   background-color: var(--pressed-state);
+}
+
+.btn:active {
+   background-color: var(--pressed-state);
+}
+
+/*-------just for me------*/
+/*ul {
+   display: flex;
+   max-width: 1128px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}*/
+
+/*=======================HEADER=======================*/
+
+.menu {
+   display: flex;
+   margin-left: 76px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+}
+
+.flex-container {
+   display: flex;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header {
+   border-bottom: 1px solid var(--accent);
+}
+
+.menu-item {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+}
+
+.menu-item:not(:last-child) {
+   margin-right: 40px;
+}
+
+.menu-item-link {
+   color: var(--dark);
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+   color: var(--pressed-state);
+   border-bottom: var(--primary-brand);
+   border-bottom-width: 4px;
+   border-bottom-style: solid;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+   border-radius: 2px;
+   border-top-right-radius: 2px;
+}
+
+.contacts {
+   display: flex;
+   font-style: normal;
+}
+
+.contact-item-link {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--text);
+}
+
+.contact-item-link:hover,
+.contact-item-link:focus {
+   color: var(--pressed-state);
+}
+
+.contact-item:not(:last-child) {
+   margin-right: 40px;
+}
+
+/*=======================MAIN=======================*/
+/*=======================**HERO**=======================*/
+
+.hero {
+   background-color: var(--hero-background);
+   padding-top: 188px;
+   padding-bottom: 188px;
+}
+
+.hero-container {
+}
+
+.main-title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: #ffffff;
+   margin-bottom: 48px;
+   max-width: 496px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.order-btn {
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+   /*height: 56px;
+   width: 169px;*/
+   padding: 16px 32px;
+   background-color: var(--primary-brand);
+   border-radius: 4px;
+   border-color: var(--primary-brand);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.order-btn-text {
+}
+
+/*=======================**Features**=======================*/
+
+.features {
+   /*margin-bottom: 120px;*/
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.features-container {
+}
+
+.features-list {
+   display: flex;
+   gap: 24px;
+}
+
+.feature-title {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   margin-bottom: 8px;
+}
+
+.feature-text {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
+}
+
+.features-list-item {
+   width: calc((100% - 3 * 24px) / 4);
+}
+
+/*=======================**What are we doing**=======================*/
+
+.doing {
+   padding-bottom: 120px;
+}
+
+.doing-container {
+   /*margin-bottom: 120px;*/
+}
+
+.doing-title {
+   margin: 72px;
+}
+
+.doing-list {
+   display: flex;
+   gap: 24px;
+}
+
+.doing-list-item {
+   width: calc((100% - 2 * 24px) / 3);
+}
+
+/*=======================**TEAM MEMBERS**=======================*/
+.team {
+   background-color: var(--light);
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.team-member-title {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   margin-bottom: 8px;
+   /*margin-top: 32px;*/
+}
+
+.team-member-position {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--text);
+   /*margin-bottom: 32px;*/
+}
+
+.team-card-title {
+   padding-top: 32px;
+   padding-bottom: 32px;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+.team-container {
+   /*padding-top: 120px;
+   padding-bottom: 120px;*/
+}
+
+.team-list {
+   display: flex;
+   gap: 24px;
+}
+
+.team-card {
+   width: calc((100% - 3 * 24px) / 4);
+   background-color: #ffffff;
+   text-align: center;
+   border-radius: 0px 0px 4px 4px;
+}
+
+/*=======================FOOTER=======================*/
+
+.page-bottom {
+   background-color: var(--dark);
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.bottom-container {
+   /*padding-top: 100px;
+   padding-bottom: 100px;*/
+}
+
+.bottom-text {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--light);
+   margin-top: 16px;
+   width: 264px;
+}
+
+.bottom-logo-studio {
+   color: var(--light);
+}
+
+/*<<<===-------------------------Portfolio---------------------------===>>>*/
+/*=======================Main=======================*/
+/*=======================Filters=======================*/
+.filter-btn {
+   font-family: inherit;
+   /*width: 116px;
+   height: 48px;*/
+   background-color: var(--light);
+   border: 1px solid var(--accent);
+   border-radius: 4px;
+   color: var(--primary-brand);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   padding: 12px 24px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+   color: #ffffff;
+}
+
+.filters {
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+   /*margin-top: 96px;*/
+   margin-bottom: 72px;
+}
+
+/*.filter:not(:last-child) {
+   margin-right: 24px;
+}*/
+
+/*=======================Projects=======================*/
+
+.project-title {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   margin-bottom: 8px;
+}
+
+.project-product {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--text);
+}
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   /*margin-bottom: 120px;*/
+   gap: 48px 24px;
+   /*justify-content: space-between;*/
+}
+
+.gallery-item {
+   width: calc((100% - 2 * 24px) / 3);
+}
+
+.gallery-item-title {
+   border-bottom: 1px solid var(--accent);
+   border-left: 1px solid var(--accent);
+   border-right: 1px solid var(--accent);
+   padding-top: 32px;
+   padding-left: 16px;
+   padding-bottom: 32px;
+}
+
+.projects {
+   padding-top: 96px;
+   padding-bottom: 120px;
+}
